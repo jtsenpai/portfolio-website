@@ -9,34 +9,6 @@ import Image from "next/image";
 import { headers } from "../../../next.config";
 
 const EmailSection = () => {
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "api/send";
-
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
-
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-    console.log(resData);
-
-    if (resopnse.status === 200) {
-      console.log("Message sent.");
-    }
-  };
-
   return (
     <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
       <div className="z-10">
@@ -56,7 +28,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div className="mb-6">
-        <form className="flex flex-col" onSubmit={handleSubmit}>
+        <form className="flex flex-col">
           <div className="mb-6">
             <label
               htmlFor="email"
