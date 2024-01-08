@@ -3,16 +3,17 @@
 import React from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
-import XTwitterIcon from "../../../public/x-twitter-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
-import { headers } from "../../../next.config";
 
 const email = process.env.EMAIL;
 
 const EmailSection = () => {
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
+    <section
+      id="contact"
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4"
+    >
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
