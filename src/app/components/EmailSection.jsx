@@ -8,6 +8,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { headers } from "../../../next.config";
 
+const email = process.env.EMAIL;
+
 const EmailSection = () => {
   return (
     <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
@@ -29,7 +31,7 @@ const EmailSection = () => {
       </div>
       <div className="mb-6">
         <form
-          action={`https://formsubmit.co/${process.env.EMAIL}`}
+          action={`https://formsubmit.co/${email}`}
           method="POST"
           className="flex flex-col"
         >
