@@ -28,7 +28,11 @@ const EmailSection = () => {
         </div>
       </div>
       <div className="mb-6">
-        <form className="flex flex-col">
+        <form
+          action={`https://formsubmit.co/${process.env.EMAIL}`}
+          method="POST"
+          className="flex flex-col"
+        >
           <div className="mb-6">
             <label
               htmlFor="email"
