@@ -5,10 +5,14 @@ import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
-
-const email = process.env.EMAIL;
+import { useForm, ValidationError } from "@formspree/react";
 
 const EmailSection = () => {
+  const [state, handleSubmit] = useForm("mbjnjvgq");
+  if (state.succeeded) {
+    alert("Success");
+  }
+
   return (
     <section
       id="contact"
@@ -31,11 +35,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div className="mb-6">
-        <form
-          action={`https://formsubmit.co/${email}`}
-          method="POST"
-          className="flex flex-col"
-        >
+        <form onSubmit={handleSubmit} className="flex flex-col">
           <div className="mb-6">
             <label
               htmlFor="email"
@@ -50,6 +50,11 @@ const EmailSection = () => {
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="johndoe@email.com "
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
             />
           </div>
 
@@ -68,6 +73,11 @@ const EmailSection = () => {
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="Just saying hi "
             />
+            <ValidationError
+              prefix="Subject"
+              field="subject"
+              errors={state.errors}
+            />
           </div>
           <div className="mb-6">
             <label
@@ -82,9 +92,15 @@ const EmailSection = () => {
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="Let's talk about......"
             ></textarea>
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
           </div>
           <button
             type="submit"
+            disabled={state.submitting}
             className="bg-blue-700 hover:bg-blue-900 text-white font-medium py-2.5 px-5 rounded-lg w-full"
           >
             Send Message
