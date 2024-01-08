@@ -60,27 +60,6 @@ const EmailSection = () => {
 
           <div className="mb-6">
             <label
-              htmlFor="subject"
-              className="text-white block mb-2 text-sm font-medium"
-            >
-              Subject
-            </label>
-            <input
-              name="subject"
-              type="text"
-              id="subject"
-              required
-              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="Just saying hi "
-            />
-            <ValidationError
-              prefix="Subject"
-              field="subject"
-              errors={state.errors}
-            />
-          </div>
-          <div className="mb-6">
-            <label
               htmlFor="message"
               className="text-white block text-sm mb-2 font-medium"
             >
