@@ -64,7 +64,9 @@ const ProjectSection = () => {
 
   return (
     <section id="projects" ref={ref}>
-      <h2>My Projects</h2>
+      <h2 className="text-2xl text-center lg:text-4xl lg:text-left font-bold text-white mb-4">
+        My Projects
+      </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}

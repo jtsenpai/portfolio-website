@@ -14,6 +14,9 @@ const TAB_DATA = [
         <li>CSS</li>
         <li>JavaScript</li>
         <li>React</li>
+        <li>Flutter</li>
+        <li>Flask</li>
+        <li>Node.js</li>
       </ul>
     ),
   },
@@ -22,8 +25,9 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Christ the Redeemer Secondary School</li>
-        <li>APTECH Computer Education</li>
+        <li>Christ the Redeemer Secondary School, Gbagada, Lagos</li>
+        <li>APTECH Computer Education, Victoria Island, Lagos</li>
+        <li>Middlesex University, London, UK</li>
       </ul>
     ),
   },
@@ -33,6 +37,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Microsoft Office Specialist</li>
+        <li>Advanced Diploma in Software Engineering</li>
       </ul>
     ),
   },
@@ -58,8 +63,10 @@ const AboutSection = () => {
           height={500}
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
+          <h2 className="text-2xl text-center lg:text-4xl lg:text-left font-bold text-white mb-4">
+            About Me
+          </h2>
+          <p className="text-sm lg:text-lg">
             I am a web developer with a focus on bringing engaging and
             user-centric frontend experiences to life. With two years of
             hands-on experience in the dynamic world of web development, I
