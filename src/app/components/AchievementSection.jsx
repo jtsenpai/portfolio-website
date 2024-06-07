@@ -28,16 +28,19 @@ const achievementsList = [
 
 const AchievementSection = () => {
   return (
-    <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+    <div
+      className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16
+    "
+    >
       <div
         className="border-[#33353F] border rounded-md py-8 px-17
-        flex flex-row items-center justify-between"
+        flex flex-col lg:flex-row items-center justify-between"
       >
         {achievementsList.map((achievement, index) => {
           return (
             <div
               key={index}
-              className="flex flex-col items-center justify-around mx-4"
+              className="flex flex-col items-center justify-around mx-4 my-3 lg:my-0"
             >
               <h2 className="text-white text-4xl font-bold flex ">
                 {achievement.prefix}
