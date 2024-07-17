@@ -43,7 +43,7 @@ const HeroSection = () => {
             </button>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-blue-700 to-blue-900 hover:bg-blue-800 text-white mt-3">
               <a
-                href="/documents/MyCV.pdf"
+                href="./documents/MyCV.pdf"
                 target="_blank"
                 className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2"
               >
