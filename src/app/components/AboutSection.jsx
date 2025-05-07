@@ -14,8 +14,6 @@ const TAB_DATA = [
         <li>CSS</li>
         <li>JavaScript</li>
         <li>React</li>
-        <li>Flutter</li>
-        <li>Flask</li>
         <li>Node.js</li>
       </ul>
     ),
