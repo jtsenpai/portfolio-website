@@ -22,11 +22,11 @@ const HeroSection = () => {
             <br />
             <TypeAnimation
               sequence={[
-                "Toni",
+                "Jesutoni",
                 1000,
                 "Web Developer",
                 1000,
-                "Mobile Developer",
+                "Game Developer",
                 1000,
               ]}
               wrapper="span"
@@ -35,7 +35,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl ">
-            A web wizard crafting digital dreams into reality.
+            A developer crafting digital dreams into reality.
           </p>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-blue-700 to-blue-900 hover:bg-slate-200 text-white">
