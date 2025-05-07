@@ -15,6 +15,9 @@ const TAB_DATA = [
         <li>JavaScript</li>
         <li>React</li>
         <li>Node.js</li>
+        <li>Unity</li>
+        <li>Godot</li>
+        <li>Blender</li>
       </ul>
     ),
   },

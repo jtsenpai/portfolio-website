@@ -20,6 +20,7 @@
     "resend": "^2.1.0"
   },
   "devDependencies": {
+    "@types/json5": "^0.0.30",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
