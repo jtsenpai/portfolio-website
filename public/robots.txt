@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jtsenpai.vercel.app
+
+# Sitemaps
+Sitemap: https://jtsenpai.vercel.app/sitemap.xml
