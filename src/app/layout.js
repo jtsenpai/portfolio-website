@@ -7,6 +7,10 @@ export const metadata = {
   title: 'JayTee',
   description: 'Welcome to my portfolio. Explore my projects in game development, web design, and creative coding.',
   keywords: ['JayTee', 'JT', 'Portfolio', 'Game Developer', 'Web Designer'],
+  robots: {
+    index: true,
+    follow: true,
+  },
   authors: [{ name: 'Jesutoni Odufeso' }],
   creator: 'JayTee',
   opengraph: {
